@@ -1,0 +1,23 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+@each $button-type, $color in $buttons-color {
+  .#{$button-type} {
+    background-color: $color;
+    transition: background-color 1s ease-in-out;
+    &:hover {
+      background-color: lighten($color, 15%);
+    }
+  }
+}

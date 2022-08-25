@@ -1,0 +1,20 @@
+//Media Query breakpoints
+$brk-wide: "(min-width: 768px)";
+
+//color
+$color-col8: #fd9f85;
+$color-col7: #ec9fa3;
+$color-col6: #4da2bb;
+$color-col5: #88d9a0;
+$color-col4: #7ee6fd;
+$color-col3: #deb2ee;
+$color-col12: #80e8d1;
+$color-hover-input: #58e1c1;
+
+$buttons-color: (
+  "default": #51ddfc,
+  "success": #63cc82,
+  "error": #e4757a,
+  "warning": #fd7856,
+  "info": #927bc1,
+);

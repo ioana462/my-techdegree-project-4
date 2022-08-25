@@ -1,0 +1,75 @@
+@use "sass:map";
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+[class^="col"] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme.col-1 {
+  background-color: map.get($buttons-color, "info");
+}
+
+.theme.col-2 {
+  background-color: map.get($buttons-color, "warning");
+}
+
+.theme.col-3 {
+  background-color: $color-col3;
+}
+
+.theme.col-4 {
+  background-color: $color-col4;
+}
+
+.theme.col-5 {
+  background-color: $color-col5;
+}
+
+.theme.col-6 {
+  background-color: $color-col6;
+}
+
+.theme.col-7 {
+  background-color: $color-col7;
+}
+
+.theme.col-8 {
+  background-color: $color-col8;
+}
+
+.theme.col-9 {
+  background-color: map.get($buttons-color, "error");
+}
+
+.theme.col-10 {
+  background-color: map.get($buttons-color, "default");
+}
+
+.theme.col-11 {
+  background-color: map.get($buttons-color, "success");
+}
+
+.theme.col-12 {
+  background-color: $color-col12;
+}
+
+.card {
+  flex-basis: 100%;
+}
